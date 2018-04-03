@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  banku.poc.account.api:
+    image: bankupocaccountapi
+    build:
+      context: .
+      dockerfile: BankU.Poc.Account.Api\Dockerfile
+
+  banku.poc.customer.api:
+    image: bankupoccustomerapi
+    build:
+      context: .
+      dockerfile: BankU.Poc.Customer.Api\Dockerfile
+
