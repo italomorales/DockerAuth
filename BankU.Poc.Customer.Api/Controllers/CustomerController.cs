@@ -11,7 +11,7 @@ namespace BankU.Poc.Customer.Api.Controllers
         [Authorize(Roles = "ADMIN")]
         public string Get()
         {
-            return  "Você tem acesso de cliente";
+            return  "Você tem acesso de administrador";
         }
 
         // GET api/customer/5
@@ -19,7 +19,7 @@ namespace BankU.Poc.Customer.Api.Controllers
         [Authorize(Roles = "CUSTOMER")]
         public string Get(int id)
         {
-            return "Você tem acesso de administrador";
+            return "Você tem acesso de cliente";
         }
 
     }
